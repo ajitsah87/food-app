@@ -11,6 +11,15 @@ function Navbar() {
             <li>PAGES</li>
             <li>BLOG</li>
             <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
+            <li>CONTACT</li>
           </ul>
         </div>
       </div>

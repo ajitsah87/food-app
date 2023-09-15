@@ -7,20 +7,12 @@ import Footer from './components/Footer'
 import NotFound from './screens/NotFound'
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 function App() {
 
   const Layout = () => {
     return (
        <div className="App">
           <Navbar />
-<<<<<<< HEAD
-         
-=======
->>>>>>> origin/main
           <main className="main">
              <Outlet />
           </main>

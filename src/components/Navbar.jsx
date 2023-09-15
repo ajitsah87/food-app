@@ -11,15 +11,6 @@ function Navbar() {
             <li>PAGES</li>
             <li>BLOG</li>
             <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            <li>CONTACT</li>
-            {/* svg */}
           </ul>
         </div>
       </div>

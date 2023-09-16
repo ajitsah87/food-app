@@ -2,7 +2,7 @@
 import './globals.css';
 import Home from './screens/Home'
 import About from './screens/About'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import NotFound from './screens/NotFound'
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
@@ -12,7 +12,7 @@ function App() {
   const Layout = () => {
     return (
        <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
           <main className="main">
              <Outlet />
           </main>

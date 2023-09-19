@@ -1,24 +1,33 @@
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-scroll'
+
 function Navbar() {
+
+const tabs = [
+  {title: 'HOME', href: "/home"},
+  {title: 'ABOUT', href: "/about"},
+  {title: 'TEAM', href: "/team"},
+  {title: 'SERVICE', href: "/service"},
+  {title: 'MENU', href: "/menu"},
+  {title: 'RESERVATION', href: "/reservation"},
+  {title: 'CONTACT', href: "/contact"}
+]
+
   return (
-    <>
-      <nav className="p-5 bg-green-600 shadow 920:flex 920:items-center 920:justify-between ">
-        <div className='flex justify-between items-center '>
-        <span className='text-3xl' >Logo</span>
-        <span className='text-black text-3xl cursor-pointer  mx-2 920:hidden block '><GiHamburgerMenu/></span>
+    <div className='absolute w-full top-0'>
+      <nav className="w-[min(1020px,100%-2rem)] mx-auto flex justify-between items-center">
+        <div className='w-14 h-14 bg-black/30 rounded-full overflow-hidden'>
+          <img className='h-full w-full object-cover' src="" alt="404" />
         </div>
-          <ul className=" 920:flex 920:items-center z-[-1] 920:z-auto 920:static absolute  w-full left-0 920:w-auto  920:py-0 py-4 920:pl-0 pl-7 920:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
-            <li className="920:my-0 mx-4 my-6">HOME</li>
-            <li className="920:my-0 mx-4 my-6">MENU</li>
-            <li className="920:my-0 mx-4 my-6">RESERVATION</li>
-            <li className="920:my-0 mx-4 my-6">PAGES</li>
-            <li className="920:my-0 mx-4 my-6">BLOG</li>
-            <li className="920:my-0 mx-4 my-6">CONTACT</li>
-          </ul>
-       
+        <ul 
+        className='flex gap-4 text-white'
+        >
+          {tabs.map((tab, i) => (
+            <Link className='cursor-pointer' key={i} to={tab.href} smooth duration={400}><li>{tab.title}</li></Link>
+          ))}
+        </ul>
       </nav>
-    </>
-  );
+    </div>
+  )
 }
 
 export default Navbar;

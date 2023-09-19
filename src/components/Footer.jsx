@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <>
       <div className="bg-black text-white w-full">
-        <div className="flex flex-wrap justify-evenly items-start mx-10 ">
-          <div className="w-1/4 ">
+        <div className="flex gap-10 items-start py-10 px-16 flex-wrap">
+          <div className="flex-grow min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase font-serif mb-10">
               our location
             </h1>
@@ -25,30 +25,26 @@ const Footer = () => {
             </p>
             <div className="flex gap-2">
               <p className="text-2xl rounded-full p-2 w-10 bg-gray-600">
-                
                 <AiOutlineGoogle />
               </p>
               <p className="text-2xl rounded-full p-2 w-10 bg-gray-600">
-                
                 <AiOutlineInstagram />
               </p>
               <p className="text-2xl rounded-full p-2 w-10 bg-gray-600">
-              
                 <AiOutlineTwitter />
               </p>
               <p className="text-2xl rounded-full p-2 w-10 bg-gray-600">
-                
                 <BiLogoFacebook />
               </p>
             </div>
           </div>
-          <div className=" w-1/4">
+          <div className="flex-grow min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase mb-10 font-serif">
               latest post
             </h1>
             <div>
-              <div className="flex mb-4 ">
-                <div className="h-[60px] w-[84px]"> 
+              <div className="flex mb-4 gap-4">
+                <div className="h-[60px] w-[84px]">
                   <img
                     className="rounded-xl h-[64px]"
                     src="https://html.miraclestudio.design/majesty/img/post_thumb.jpg"
@@ -63,14 +59,22 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex mb-4"><div className="h-[60px] w-[84px]"><img
-                className="rounded-xl h-[64px]"
-                src="https://html.miraclestudio.design/majesty/img/post_thumb2.jpg"
-                alt="img"
-              /></div>
-              <div><h3 className="text-lg font-medium">Thai Tanic</h3>
-              <p className="text-sm leading-4 text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div></div>
-              <div className="flex ">
+              <div className="flex mb-4 gap-4">
+                <div className="h-[60px] w-[84px]">
+                  <img
+                    className="rounded-xl h-[64px]"
+                    src="https://html.miraclestudio.design/majesty/img/post_thumb2.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium">Thai Tanic</h3>
+                  <p className="text-sm leading-4 text-slate-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-4">
                 <div className="h-[60px] w-[84px]">
                   <img
                     className="rounded-xl  h-[64px]"
@@ -80,7 +84,6 @@ const Footer = () => {
                 </div>
 
                 <div>
-                  
                   <h3 className="text-lg font-medium">Thai Tanic</h3>
                   <p className="text-sm leading-4 text-slate-500">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -89,31 +92,30 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="1/4 ">
+          <div className="flex-grow min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase font-serif mb-10">
               opening times
             </h1>
-            <p className="mb-2">
-              <span className="text-slate-500 pr-20">Monday</span> 1 pm-10 pm
-            </p><p className="mb-2">
-              <span className="text-slate-500 pr-20">Tuesday</span> 1 pm-10 pm
-            </p><p className="mb-2">
-              <span className="text-slate-500 pr-20">Wednesday</span> 1 pm- Midnight
-            </p><p className="mb-2">
-              <span className="text-slate-500 pr-20">Thusday</span> 1 pm-10 pm
-            </p><p className="mb-2">
-              <span className="text-slate-500 pr-20">Friday</span> 1 pm- Midnight
-            </p><p className="mb-2">
-              <span className="text-slate-500 pr-20">Saturday</span> closed
-            </p>
-            <p className="mb-2">
-              <span className="text-slate-500 pr-20">Saturday</span> 1 pm-10 pm
-            </p>
-          </div>
-          <div>
-            <h1 className="font-semibold text-2xl uppercase font-serif">
-              flicker photos
-            </h1>
+            <div className="flex gap-16">
+              <div className="flex flex-col text-slate-500">
+                <span>Monday</span>
+                <span>Tuesday</span>
+                <span>Webnesday</span>
+                <span>Thursday</span>
+                <span>Friday</span>
+                <span>Saturday</span>
+                <span>Sunday</span>
+              </div>
+              <div className="flex flex-col">
+                <span>1pm - 10pm</span>
+                <span>1pm - 10pm</span>
+                <span>1pm - Midnight</span>
+                <span>1pm - 10pm</span>
+                <span>1pm - Minnight</span>
+                <span>1pm - 10pm</span>
+                <span className="ml-[2px]">Closed</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -122,6 +124,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// cd new
-//git clone http///

@@ -5,6 +5,7 @@ import About from './screens/About'
 // import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import NotFound from './screens/NotFound'
+import Contact from './components/Contact';
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <main className="main">
              <Outlet />
           </main>
+          <Contact />
           <Footer />
        </div>
     );

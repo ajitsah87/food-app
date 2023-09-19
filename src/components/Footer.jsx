@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-black text-white w-full">
-        <div className="flex justify-evenly items-start mx-10 ">
+        <div className="flex flex-wrap justify-evenly items-start mx-10 ">
           <div className="w-1/4 ">
             <h1 className="font-semibold text-2xl uppercase font-serif mb-10">
               our location

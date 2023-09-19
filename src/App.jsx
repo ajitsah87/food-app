@@ -6,6 +6,7 @@ import About from './screens/About'
 import Footer from './components/Footer'
 import NotFound from './screens/NotFound'
 import Contact from './components/Contact';
+import News from './components/News';
 import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <main className="main">
              <Outlet />
           </main>
+          <News/>
           <Contact />
           <Footer />
        </div>

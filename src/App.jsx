@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Navbar />
       <main className="main">
-        <div className="h-screen"></div>
         <Home />
         <About />
         <News />

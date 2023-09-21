@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import News from "./components/News";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Form/>
     </div>
   );
 }

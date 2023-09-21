@@ -9,7 +9,7 @@ function News() {
           <p className="text-xl font-medium">Stay up to Date</p>
         </div>
         <div className="flex items-center justify-evenly mx-36 gap-5 flex-wrap">
-          <div className=" w-[360px] h-[360px] relative rounded-xl group">
+          <div className=" w-80 h-80 relative rounded-xl group">
             <img
               className="h-full w-full object-cover rounded-xl"
               src="block4.jpg"
@@ -31,7 +31,7 @@ function News() {
             </div>
           </div>
 
-          <div className=" w-[360px] h-[360px] relative rounded-xl group">
+          <div className=" w-80 h-80 relative rounded-xl group">
             <img
               className="h-full w-full object-cover rounded-xl"
               src="block4.jpg"
@@ -54,7 +54,7 @@ function News() {
             </div>
           </div>
 
-          <div className=" w-[360px] h-[360px] relative rounded-xl group">
+          <div className=" w-80 h-80 relative rounded-xl group">
             <img
               className="h-full w-full object-cover rounded-xl"
               src="block4.jpg"

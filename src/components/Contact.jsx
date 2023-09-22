@@ -1,4 +1,8 @@
 function Contact() {
+  const form=[
+    {type:"text",placeholder:"NAME"},
+    {type:"text",placeholder:"EMAIL"},
+    {type:"text",placeholder:"WEBSITE"},]
   return (
     <>
       <div className="w-full mx-auto text-center">
@@ -16,21 +20,14 @@ function Contact() {
         </div>
         <div className="flex border-red-100 items-center justify-center h-80 w-full">
           <div className="flex flex-col gap-10 w-1/3 mr-20">
-            <input
-              className="outline-2 outline-[#c59d5f]  rounded-md pl-2  py-2"
-              type="text"
-              placeholder="NAME"
-            />
-            <input
-              className="outline-2 outline-[#c59d5f]  rounded-md  pl-2 py-2"
-              type="text"
-              placeholder="E-MAIL"
-            />
-            <input
+           
+            { form.map((f,i)=>(
+              <input key={i}
               className="outline-2 outline-[#c59d5f]  rounded-md pl-2 py-2"
-              type="text"
-              placeholder="WEBSITE"
+              placeholder={f.placeholder}
+              type={f.type}
             />
+             ))}
           </div>
           <div>
             <textarea

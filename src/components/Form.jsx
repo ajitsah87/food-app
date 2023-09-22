@@ -13,7 +13,16 @@ function Form() {
   useMotionValueEvent(scrollYProgress, "change", (value) =>
     setValue(Number(value * 300))
   );
-
+const form=[
+  {type:"text",placeholder:"YOUR NAME*"},
+  {type:"text",placeholder:"EMAIL"},
+  {type:"text",placeholder:"OCCASION*"},
+  {type:"text",placeholder:"PREFERRED FOOD*"},
+  {type:"text",placeholder:"BRANCH NAME*"},
+  {type:"text",placeholder:"NUMBER OF PERSON"},
+  {type:"text",placeholder:"PHONE NO."},
+  {type:"text",placeholder:"DATE"},
+]
   return (
     <>
       <div
@@ -29,46 +38,14 @@ function Form() {
         <div className="flex items-center justify-center gap-6 ">
           <div className="flex gap-5">
             <div className="grid flex-1 grid-cols-2 grid-rows-4 gap-6">
-              <input
-                className="bg-transparent pl-4 py-2 outline-none border-[2px] px-28 rounded-xl "
-                placeholder="YOUR NAME*"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="OCCASION"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="BRANCH NAME"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="PHONE NO."
-                type="text "
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="EMAIL"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="name"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="name"
-                type="text"
-              />
-              <input
-                className="bg-transparent focus-within:outline-white/30 outline-white  pl-4 py-2 border-[2px] rounded-xl "
-                placeholder="name"
-                type="text"
-              />
+             { form.map((f,i)=>(
+              <input key={i}
+              className="bg-transparent pl-4 py-2  focus-within:outline-white/30 outline-white border-[2px] px-28 rounded-xl "
+              placeholder={f.placeholder}
+              type={f.type}
+            />
+             ))}
+             
             </div>
             <div className="grid flex-1">
               <textarea

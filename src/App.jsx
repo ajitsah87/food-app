@@ -6,6 +6,9 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import News from "./components/News";
 import Form from "./components/Form";
+import Starter from "./components/Starter";
+
+import Dishes from "./components/Dishes";
 import Desert from "./components/Desert";
 
 function App() {
@@ -15,6 +18,8 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Starter />
+        <Dishes />
         <Desert />
         <News />
         <Contact />

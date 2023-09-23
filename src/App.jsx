@@ -10,6 +10,7 @@ import Starter from "./components/Starter";
 
 import Dishes from "./components/Dishes";
 import Desert from "./components/Desert";
+import Timing from "./components/Timing";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Timing />
         <Starter />
         <Dishes />
         <Desert />

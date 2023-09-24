@@ -1,12 +1,13 @@
 
 function Dishes() {
     const desertField=[
-      {image:"chrismas.png"}, //suno humko lgta hai ki ye jo hum name use kiye shayad vo ho skte {image ,}
-      {image:"vite.svg"},
-      {image:"music.jpg"},
-      {image:"chrismas"},
-      {image:"chrismas"},
-      {image:"chrismas"},
+      {image:"di1.jpg"}, 
+      {image:"di6.jpg"}, 
+      {image:"di2.jpg"}, 
+      {image:"di8.jpg"}, 
+      {image:"di4.jpg"}, 
+      {image:"di9.jpg"}, 
+     
     ]
     return (
       <>

@@ -1,12 +1,13 @@
 
 function Starter() {
     const desertField=[
-      {image:"chrismas.png"},
-      {image:"vite.svg"},
-      {image:"music.jpg"},
-      {image:"chrismas"},
-      {image:"chrismas"},
-      {image:"chrismas"},
+      {image:"s1.jpg"},
+      {image:"s2.jpg"},
+      {image:"s3.jpg"},
+      {image:"s4.jpg"},
+      {image:"s5.jpg"},
+      {image:"s7.jpg"},
+      
     ]
     return (
       <>

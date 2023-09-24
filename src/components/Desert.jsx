@@ -1,12 +1,13 @@
 
 function Desert() {
   const desertField=[
-    {image:"chrismas.png"},
-    {image:"vite.svg"},
-    {image:"music.jpg"},
-    {image:"chrismas"},
-    {image:"chrismas"},
-    {image:"chrismas"},
+    {image:"d1.jpg"},
+    {image:"d2.jpg"},
+    {image:"d3.jpg"},
+    {image:"d4.jpg"},
+    {image:"d7.jpg"},
+    {image:"d6.jpg"},
+    
   ]
   return (
     <>
@@ -26,7 +27,7 @@ function Desert() {
                 <img className="mx-auto text-5xl  mb-4 opacity-0 group-hover:opacity-100 duration-500 h-0 group-hover:h-8 transition-all" />
                 <h5 className="text-2xl font-semibold">HAPPY CRISTMAS</h5>
                 <p className="font-medium text-base">Event</p>
-                <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ">
+                <p className="text-sm  mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Porro, neque.
                 </p>

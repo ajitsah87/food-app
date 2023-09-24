@@ -23,7 +23,7 @@ function Contact() {
            
             { form.map((f,i)=>(
               <input key={i}
-              className="outline-2 outline-[#c59d5f]  rounded-md pl-2 py-2"
+              className="outline-2 outline-[#c59d5f] border-b-[1px] border-stone-300  rounded-md pl-2 py-2"
               placeholder={f.placeholder}
               type={f.type}
             />
@@ -31,7 +31,7 @@ function Contact() {
           </div>
           <div>
             <textarea
-              className="border-[#e8e8e8] rounded-md pl-4 pt-2 text-[#515151] outline-[#c59d5f]  w-full resize-none"
+              className="border-stone-300 rounded-md pl-4 pt-2 text-[#515151] outline-[#c59d5f]   border-[1px]  w-full resize-none"
               name="comment"
               cols="60"
               rows="8"

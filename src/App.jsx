@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import News from "./components/News";
-import Form from "./components/Reservation";
+import Reservation from "./components/Reservation";
 import Timing from "./components/Timing";
 import ArtOfFood from "./components/ArtOfFood";
 import Carousel from "./components/Carousel";
@@ -24,7 +24,7 @@ function App() {
         <Timing />
         <OurMenu />
         <FoodCategory />
-        <Form />
+        <Reservation />
         <News />
         <Contact />
       </main>

@@ -38,13 +38,13 @@ function Navbar() {
   }, []);
 
   const tabs = [
-    { title: "HOME", href: "home" },
-    { title: "ABOUT", href: "about" },
-    { title: "TEAM", href: "/team" },
-    { title: "SERVICE", href: "/service" },
-    { title: "MENU", href: "/menu" },
-    { title: "RESERVATION", href: "/reservation" },
-    { title: "CONTACT", href: "/contact" },
+    { title: "HOME", href: "home", offset: -70 },
+    { title: "ABOUT", href: "about", offset: -70 },
+    { title: "TEAM", href: "team", offset: 0 },
+    { title: "SERVICE", href: "service", offset: -80 },
+    { title: "MENU", href: "menu", offset: -220 },
+    { title: "RESERVATION", href: "reservation", offset: -10 },
+    { title: "CONTACT", href: "contact", offset: -70 }
   ];
 
   return (
@@ -110,7 +110,7 @@ function Navbar() {
               key={i}
               to={tab.href}
               smooth
-              offset={-70}
+              offset={tab.offset}
               duration={400}
               onClick={() => setToggle(false)}
             >

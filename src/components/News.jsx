@@ -1,3 +1,4 @@
+import {motion} from 'framer-motion'
 import { FaImage, FaVideo } from "react-icons/fa";
 import { HiSpeakerWave } from "react-icons/hi2";
 
@@ -48,7 +49,11 @@ const News = () => {
       </div>
       <div className="flex max-[1100px]:flex-wrap items-center gap-8 max-[1100px]:gap-10 justify-center w-[min(1220px,100%-4rem)] mx-auto">
         {news.map((event, i) => (
-          <div
+          <motion.div
+            initial={{y: "30%", opacity: 0}}
+            whileInView={{y: 0, opacity: 1}}
+            viewport={{amount: .3, once: true}}
+            transition={{delay: 0.05*i, duration: .4}}
             key={i}
             style={{ aspectRatio: 1 }}
             className="w-[370px] relative rounded-xl group"
@@ -75,7 +80,7 @@ const News = () => {
             <button className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 w-1/2 py-2 bg-[#c59d5f] rounded-lg text-center text-white hover:shadow-lg hover:scale-[1.01] active:scale-95 transition-all">
               {event.date}
             </button>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="w-full mt-36">

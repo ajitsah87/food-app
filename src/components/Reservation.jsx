@@ -45,6 +45,7 @@ const Reservation = () => {
       backgroundSize: `${backgrounSize + motionValue}px`,
       backgroundImage: `url('assets/reservation3.jpg')`,
     }}
+    id="reservation"
     ref={containerRef} className="text-white text-center bg-center bg-black/70 bg-blend-multiply py-20 relative">
       <div className="w-[min(1220px,100%-4rem)] mx-auto relative z-10">
         <div className="text-center space-y-3">
@@ -62,8 +63,9 @@ const Reservation = () => {
           <div className="flex gap-5 mt-16 max-920:flex-col">
             <div className="flex-1 grid grid-cols-2 max-[450px]:grid-cols-1 gap-7">
               {
-                input.map(placeholder => (
+                input.map((placeholder, i) => (
                   <input
+                  key={i}
                   type="text" placeholder={placeholder.placeholder}
                   className="border max-920:p-2 border-white focus-visible:border-[#bb955a] bg-transparent outline-none rounded-lg px-3"
                   />

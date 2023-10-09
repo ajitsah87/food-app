@@ -44,6 +44,7 @@ const FoodItem = ({ category, title, titleBg }) => {
       <div className="grid grid-cols-3 max-1200:grid-cols-2 max-600:grid-cols-1 gap-7 py-10 w-[min(1220px,100%-5rem)] mx-auto">
         {category.map((item, i) => (
           <motion.div
+            key={i}
             initial={{y: "30%", opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             viewport={{amount: .3, once: true}}
@@ -58,7 +59,7 @@ const FoodItem = ({ category, title, titleBg }) => {
               <div className="h-0 opacity-0 group-hover:h-[75px] group-hover:opacity-100 duration-500 ease-in-out overflow-hidden transition-all">
                 <div className="flex justify-center mb-4">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <span>
+                    <span key={i}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill={i !== 5 ? "#c59d5f" : "white"}

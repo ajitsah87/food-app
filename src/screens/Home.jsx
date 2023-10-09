@@ -11,7 +11,7 @@ const Home = () => {
     "A Journey of Flavor",
     "Travel the World on a Plate",
     "Every Bite a New Chapter",
-  ];
+  ]
 
   const cards = [
     { src: "di3.jpg", content: "menu", id: 1 },
@@ -173,24 +173,23 @@ const Home = () => {
                       exit="exit"
                       className="h-full w-full text-white flex flex-col justify-center items-center"
                     >
-                      <motion.img
-                        src="assets/Artemio Lily Stamp.png"
-                        height={30}
-                        width={30}
-                        variants={cardItemAnimationVariants}
-                        draggable={false}
-                      />
                       <motion.h4
-                        className="text-xl font-semibold"
+                        className="text-xl max-920:text-lg font-FjallaOne"
                         variants={cardItemAnimationVariants}
                       >
-                        MENU
+                        FOOD NAME
                       </motion.h4>
                       <motion.p
-                        className="font-Courgette"
+                        className="font-FjallaOne text-lg"
                         variants={cardItemAnimationVariants}
                       >
-                        {card.content}
+                        $79.99
+                      </motion.p>
+                      <motion.p
+                        className="font-Courgette text- leading-5"
+                        variants={cardItemAnimationVariants}
+                      >
+                        some text
                       </motion.p>
                     </motion.div>
                   </div>

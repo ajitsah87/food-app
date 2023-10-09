@@ -7,7 +7,7 @@ const FoodCategory = () => {
     { img: "s3.jpg" },
     { img: "s4.jpg" },
     { img: "s5.jpg" },
-    { img: "s6.jpg" },
+    { img: "s6.jpg" }
   ];
   const dishes = [
     { img: "di1.jpg" },
@@ -15,7 +15,7 @@ const FoodCategory = () => {
     { img: "di2.jpg" },
     { img: "di8.jpg" },
     { img: "di4.jpg" },
-    { img: "di9.jpg" },
+    { img: "di9.jpg" }
   ];
   const dessert = [
     { img: "d1.jpg" },
@@ -23,7 +23,7 @@ const FoodCategory = () => {
     { img: "d3.jpg" },
     { img: "d4.jpg" },
     { img: "d7.jpg" },
-    { img: "d6.jpg" },
+    { img: "d6.jpg" }
   ];
 
   return (

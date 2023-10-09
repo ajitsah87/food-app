@@ -31,7 +31,7 @@ const Timing = () => {
 
   return (
     <>
-      <div className="">
+      <div id="service">
         <div
         style={{ backgroundPositionY: -motionValue}}
         ref={containerRef} className="bg-[url('assets/timing.jpg')] bg-cover bg-center text-white py-28 max-1200:py-20 relative">

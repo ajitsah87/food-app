@@ -9,6 +9,7 @@ const Contact = () => {
 
   return (
     <div
+    id="contact"
     className="text-center py-20 relative">
       <div className="w-[min(1120px,100%-4rem)] mx-auto relative z-10">
         <div className="text-center space-y-3">
@@ -26,8 +27,9 @@ const Contact = () => {
           <div className="flex gap-5 mt-16 max-920:flex-col text-black">
             <div className="flex-1 grid grid-cols-1 max-[450px]:grid-cols-1 gap-7">
               {
-                input.map(placeholder => (
+                input.map((placeholder, i) => (
                   <input
+                  key={i}
                   type="text" placeholder={placeholder.placeholder}
                   className="border max-920:p-2 border-gray-400 focus-visible:border-[#bb955a] bg-transparent outline-none rounded-lg px-3"
                   />

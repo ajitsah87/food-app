@@ -146,7 +146,6 @@ const About = () => {
           </AnimatePresence>
         </h2>
         <div
-          div
           className="-rotate-12 font-Courgette text-lg text-center mt-10 text-gray-500"
         >
           - Vinsmoke Sanji

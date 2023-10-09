@@ -1,50 +1,48 @@
-function Contact() {
-  const form=[
-    {type:"text",placeholder:"NAME"},
-    {type:"text",placeholder:"EMAIL"},
-    {type:"text",placeholder:"WEBSITE"},]
+
+const Contact = () => {
+
+  const input = [
+    {placeholder: "NAME" },
+    {placeholder: "EMAIL" },
+    {placeholder: "WEBSITE" }
+  ]
+
   return (
-    <>
-      <div className="w-full mx-auto text-center">
-        <div className=" w-1/3 mx-auto">
-          <h1 className="text-5xl tracking-tight font-semibold mb-4 font-[Fjalla One] text-[#262626] ">
-            GET IN TOUCH
-          </h1>
-          <p className="text-xl font-medium mb-16 text-[#262626]">
-            Connect from heart
-          </p>
-          <p className="text-[#515151] text-lg ">
-            Majesty is a team work of Majesty Restaurant & Cafe, we aim at
-            promoting the foodstuff industry through the branches.
-          </p>
-        </div>
-        <div className="flex border-red-100 items-center justify-center h-80 w-full">
-          <div className="flex flex-col gap-10 w-1/3 mr-20">
-           
-            { form.map((f,i)=>(
-              <input key={i}
-              className="outline-2 outline-[#c59d5f] border-b-[1px] border-stone-300  rounded-md pl-2 py-2"
-              placeholder={f.placeholder}
-              type={f.type}
+    <div
+    className="text-center py-20 relative">
+      <div className="w-[min(1120px,100%-4rem)] mx-auto relative z-10">
+        <div className="text-center space-y-3">
+            <img
+              src="assets/Artemio Lily Stamp.png"
+              className="h-12 w-12 object-contain mx-auto"
             />
-             ))}
+            <h2 className="font-FjallaOne text-5xl">GET IN TOUCH</h2>
+            <p className="font-Courgette text-lg flex justify-center items-center gap-2">
+              <span className="h-[1px] w-8 bg-gray-500"></span>
+              <span>Connect from heart</span>
+              <span className="h-[1px] w-8 bg-gray-500"></span>
+            </p>
           </div>
-          <div>
-            <textarea
-              className="border-stone-300 rounded-md pl-4 pt-2 text-[#515151] outline-[#c59d5f]   border-[1px]  w-full resize-none"
-              name="comment"
-              cols="60"
-              rows="8"
-              placeholder="MESSAGE"
-            ></textarea>
+          <div className="flex gap-5 mt-16 max-920:flex-col text-black">
+            <div className="flex-1 grid grid-cols-1 max-[450px]:grid-cols-1 gap-7">
+              {
+                input.map(placeholder => (
+                  <input
+                  type="text" placeholder={placeholder.placeholder}
+                  className="border max-920:p-2 border-gray-400 focus-visible:border-[#bb955a] bg-transparent outline-none rounded-lg px-3"
+                  />
+                ))
+              }
+            </div>
+            <div className="flex-1 h-48">
+              <textarea placeholder="MESSAGE"
+              className="resize-none p-3 bg-transparent border border-gray-400 focus-visible:border-[#bb955a] outline-none rounded-lg h-full w-full max-920:h-52" />
+            </div>
           </div>
-        </div>
-        <button className="text-center text-md hover:text-white hover:bg-[#c59d5f] border-[#c59d5f]  rounded-xl py-2 px-6 border-[2px] mb-16 transition-all ease-in-out duration-500">
-          SEND
-        </button>
+          <button className="border border-[#bb955a] text-sm rounded-lg px-6 py-[9px] hover:bg-[#bb955a] transition-colors duration-300 mt-10 text-black hover:text-white">SEND</button>
       </div>
-    </>
-  );
-}
+    </div>
+  )
+};
 
 export default Contact;

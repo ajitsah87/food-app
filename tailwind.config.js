@@ -7,13 +7,23 @@ export default {
   theme: {
     extend: {   
         screens: {
+      1200: '1200px',    
       920: '920px',
-      // 768: '768px',
+      600: '600px',
       500: '500px'
     },
     backgroundImage: {
-      landingPage: 'url("assets/Flowers Illustration.png")'
-    }
+      landingPage: 'url("assets/bg.jpg")',
+      card: 'url("assets/bg-card-3.jpg")'
+    },
+fontFamily: {
+  FjallaOne: 'Fjalla One',
+  Courgette: 'Courgette',
+},
+fontWeight: {
+  normal: '400',
+  bold: '700',
+},
 },
   },
   plugins: [],

@@ -7,10 +7,10 @@ import {
 
 const Footer = () => {
   return (
-    <>
-      <div className="bg-black text-white w-full">
+    <div>
+      <div className="bg-zinc-900 text-white w-full">
         <div className="flex gap-10 items-start py-10 px-16 flex-wrap">
-          <div className="flex-grow min-w-[350px]">
+          <div className="flex-grow min-[500px]:min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase font-serif mb-10">
               our location
             </h1>
@@ -38,7 +38,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex-grow min-w-[350px]">
+          <div className="flex-grow min-[500px]:min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase mb-10 font-serif">
               latest post
             </h1>
@@ -92,11 +92,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-grow min-w-[350px]">
+          <div className="flex-grow min-[500px]:min-w-[350px]">
             <h1 className="font-semibold text-2xl uppercase font-serif mb-10">
               opening times
             </h1>
-            <div className="flex gap-16">
+            <div className="flex gap-16 max-[400px]:gap-5">
               <div className="flex flex-col text-slate-500">
                 <span>Monday</span>
                 <span>Tuesday</span>
@@ -119,8 +119,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+      <div className="h-44 bg-black grid place-content-center">
+        <img src="assets/logo-dark.png" className="mx-auto" />
+        <p className="text-zinc-600 text-center mt-4">2015 ALL RIGHT RESERVED. DESIGNED BY <span className="text-orange-300">CREATIVE WP</span></p>
+      </div>
+    </div>
+  )
+}
 
 export default Footer;

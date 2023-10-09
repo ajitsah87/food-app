@@ -5,12 +5,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import News from "./components/News";
-import Form from "./components/Form";
-import Starter from "./components/Starter";
-
-import Dishes from "./components/Dishes";
-import Desert from "./components/Desert";
+import Form from "./components/Reservation";
 import Timing from "./components/Timing";
+import ArtOfFood from "./components/ArtOfFood";
+import Carousel from "./components/Carousel";
+import OurMenu from "./components/OurMenu";
+import FoodCategory from "./components/FoodCategory";
 
 function App() {
   return (
@@ -19,14 +19,15 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <ArtOfFood />
+        <Carousel />
         <Timing />
-        <Starter />
-        <Dishes />
-        <Desert />
+        <OurMenu />
+        <FoodCategory />
+        <Form />
         <News />
         <Contact />
       </main>
-      <Form/>
       <Footer />
     </div>
   );
